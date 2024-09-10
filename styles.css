@@ -1,0 +1,779 @@
+html,
+* {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+.hrefColor {
+  color: rgb(41, 38, 38);
+}
+h5,
+h6,
+p,
+a {
+  text-decoration: none;
+}
+
+h5 {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.deals p {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(36, 34, 34);
+}
+
+.deals .pShop {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+.logoName {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 423;
+  font-style: normal;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+}
+
+h2,
+#navbarDropdown {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-size: 1rem;
+  font-style: normal;
+  text-transform: uppercase;
+  word-spacing: 0.5rem;
+}
+
+h2,
+#navbarDropdown {
+  font-weight: 500;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.hovAnim,
+.ProdFont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: uppercase;
+  word-spacing: 0.5rem;
+}
+
+.hovAnim:hover {
+  color: #6ea8fe !important;
+}
+
+.divider {
+  display: flex;
+  flex: auto;
+  justify-content: space-evenly;
+  height: 20rem;
+}
+
+.carouselCont {
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+}
+
+.dropDown {
+  background-color: #6ea8fe;
+}
+
+.dropDown:hover,
+.ProdFont:hover {
+  background-color: #7baaf0;
+  transition: 0.3s;
+}
+
+.bgcolor {
+  background-color: #6ea8fe;
+}
+
+.dropDownMain {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropDownMainCateg {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.carousel-item > img {
+  background-size: cover;
+  height: 20rem;
+}
+
+/* profile, cart icon */
+.profIcon,
+.cartIcon {
+  font-size: 1.5rem;
+  display: none;
+}
+
+.deals {
+  width: 14rem;
+}
+
+.deals i {
+  color: rgb(41, 38, 38);
+  font-size: 1.5rem;
+  margin-left: 5rem;
+}
+
+.dealsItem1 {
+  padding: 0;
+}
+
+.pcComponentsCategMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.pcComponentsCateg {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.pcItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+.pcItem img {
+  height: 5rem;
+  width: auto;
+  transition: width 0.3s ease;
+}
+
+.categTitle {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5vw;
+  font-style: normal;
+  text-align: center;
+  color: #000;
+}
+
+.moboImg,
+.gputxt,
+.ramtxt,
+.ssdtxt,
+.hddtxt,
+.casetxt {
+  padding-left: 1rem;
+}
+.productsDisplayContMain {
+  display: flex;
+  justify-content: center;
+}
+.productsDisplayCont {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  width: 60%;
+  align-content: center;
+}
+.prodDisplayItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 200px;
+}
+.prodDisplayItem img {
+  width: 100%;
+  height: auto;
+}
+.prodDisplayItem:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+.prodCateg {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #606063;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.prodName {
+  font-family: "Roboto", sans-serif;
+
+  font-style: normal;
+}
+#productName,
+.prodCateg,
+.priceCartCont {
+  font-size: 1vw;
+}
+.cartProd {
+  font-size: 1.5vw;
+}
+#price {
+  margin-bottom: 0;
+}
+.priceCartCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logoHidden {
+  display: none;
+}
+
+/*footer*/
+.footerTitles {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.footerChild a:hover {
+  color: #7baaf0 !important;
+  transition: 0.3s;
+}
+/*about*/
+.aboutTitle {
+  font-family: "Lato", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.5vw;
+  font-style: normal;
+  text-transform: none;
+  word-spacing: normal;
+}
+.aboutMain {
+  font-size: 2vw;
+}
+.subCaption {
+  font-size: auto !important;
+}
+video {
+  background-color: #000;
+}
+/*contact us*/
+.contact-section {
+  width: 100%;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 1rem;
+}
+
+.contact-intro > * + * {
+  margin-top: 1rem;
+}
+
+.contact-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.contact-description {
+  color: rgb(107 114 128);
+}
+
+.form-group-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.form-input::placeholder,
+.form-textarea:focus-visible {
+  color: #6b7280;
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.form-textarea {
+  min-height: 120px;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 1.2rem;
+  background-color: #3124ca;
+  color: #fff;
+  padding: 13px 5px;
+  border-radius: 0.375rem;
+}
+.h-captcha {
+  margin-top: 1rem;
+}
+
+/*media queries*/
+@media only screen and (min-width: 2180px) {
+  .pcComponentsCategMain {
+    margin-top: 3vh;
+  }
+
+  .pcItem,
+  .pcItem img {
+    height: 10vh;
+    width: 10vw;
+    transition: height 0.3s ease;
+  }
+
+  .pcComponentsCateg {
+    gap: 3rem;
+  }
+  .deals {
+    width: 15vw;
+    height: max-content;
+  }
+
+  .deals h5 {
+    font-size: 1.5vw;
+  }
+  .deals h6,
+  .deals p {
+    font-size: 1vw;
+  }
+  .pShop {
+    font-size: 1.5vw !important;
+  }
+  .deals i {
+    font-size: 1.5vw;
+  }
+
+  .pcItem img {
+    height: 10vh !important;
+  }
+}
+@media only screen and (min-width: 1530px) {
+  .moboImg,
+  .peripImg {
+    padding-left: 2.5vw;
+  }
+
+  .productsDisplayCont {
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+  }
+
+  .prodDisplayItem {
+    max-width: 100%;
+  }
+  .pcItem,
+  .pcItem img {
+    height: 8vh;
+    width: 7vw;
+    transition: height 0.3s ease;
+  }
+  .pcItem {
+    margin: 0 1rem;
+  }
+  .pcComponentsCategMain {
+    margin-top: 2vh;
+  }
+  .productsDisplayContMain {
+    margin-top: 2vw;
+  }
+  .iframeMap {
+    width: 40rem !important;
+    height: 25rem !important;
+  }
+  .footerTitles {
+    font-size: 2vw;
+  }
+  .footerChild a,
+  .footerChild p,
+  .credits p,
+  .credits i {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .prodCategBig {
+    width: auto;
+    height: auto;
+  }
+
+  .prodCategBig > h2,
+  .prodCategBig > a {
+    font-size: 1vw;
+  }
+  #header .logoImg {
+    width: 100px;
+    height: 64px;
+  }
+
+  #header .logoName {
+    font-size: 2rem !important; /* Increase font size */
+  }
+
+  #header form .form-control {
+    font-size: 1.5rem; /* Increase search bar font size */
+    padding: 0.75rem 1.5rem; /* Increase padding */
+  }
+
+  .insertNav .nav-link {
+    font-size: 1.5rem; /* Increase font size for navbar links */
+    padding: 0.75rem 1.5rem; /* Increase padding for navbar items */
+  }
+
+  .profIcon i,
+  .cartIcon i {
+    font-size: 1.8rem; /* Increase icon size for profile and cart */
+  }
+
+  .dropDownMargin .ulNav li {
+    margin-left: 1rem;
+  }
+
+  .deals > * {
+    font-size: 1vw;
+  }
+  .carouselCont {
+    margin-bottom: 2vh;
+  }
+  #carouselExampleAutoplaying > div {
+    height: 40vh;
+  }
+
+  .carouselCont img {
+    height: 40vh;
+    margin-bottom: 2vh;
+  }
+
+  .divider {
+    height: max-content;
+  }
+
+  .pcComponentsCateg {
+    height: 10vh;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .productsDisplayCont {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .prodCategBig {
+    opacity: 0;
+    width: 12rem;
+    display: none;
+  }
+
+  .navbarItems:hover {
+    background-color: #7baaf0;
+    transition: 0.3s;
+  }
+
+  .navbarDrop {
+    z-index: 99999;
+  }
+  .dropDownMargin {
+    margin-right: 0;
+  }
+
+  .carousel-item > img {
+    background-size: cover;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .carouselCont {
+    display: block !important;
+    width: 70%;
+    object-fit: cover;
+  }
+
+  .dealsItem1 {
+    margin-left: 8px;
+  }
+  .aboutTitle {
+    font-size: 2vh;
+  }
+  .aboutMain {
+    font-size: 3vh;
+  }
+}
+
+@media only screen and (max-width: 918px) {
+  .pcItem,
+  .pcItem img {
+    height: 3.5rem;
+    width: auto;
+    transition: height 0.3s ease;
+  }
+
+  .pcComponentsCateg {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .moboImg {
+    padding-left: 0.5rem;
+  }
+  .productsDisplayCont {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .iframeMap {
+    width: 30rem;
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .iframeMap {
+    width: 100%;
+    margin: 0 3px;
+    height: 21rem;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .carouselCont {
+    width: 95%;
+    margin-left: 1rem;
+    object-fit: cover;
+    display: flex;
+  }
+
+  .divider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deals {
+    display: flex;
+    width: 100%;
+    margin: 8px 0px 0px 3px;
+    flex-direction: row;
+  }
+
+  .deals h5 {
+    font-size: 15px !important;
+  }
+
+  .deals h6 {
+    font-size: 13px !important;
+  }
+
+  .deals p {
+    font-size: 10px !important;
+  }
+
+  .deals i {
+    margin-left: 3rem !important;
+  }
+
+  .carouselContItem {
+    height: auto;
+    width: auto;
+  }
+
+  .pcComponentsCategMain {
+    margin-top: 5.5rem;
+    margin-left: 2vw;
+  }
+  .pcItem img {
+    height: 11vw;
+  }
+  .dealstxt,
+  .pShop {
+    margin-bottom: 0;
+  }
+  .productsDisplayCont {
+    width: 80%;
+  }
+
+  .prodCategMain {
+    padding: 1vw;
+  }
+
+  .prodDisplayItem {
+    height: min-content;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .carouselCont img {
+    height: 10rem;
+    width: auto;
+  }
+
+  .carouselCont {
+    margin-left: 10px;
+  }
+  .dealsItem1 {
+    margin-left: 0;
+  }
+  .deals {
+    margin: 0 2vw;
+    width: 95%;
+  }
+  .deals h5 {
+    font-size: 13px !important;
+  }
+  .pcComponentsCateg {
+    margin: 0;
+  }
+  .pcComponentsCategMain {
+    margin: 0 4vw;
+    padding: 0;
+  }
+  .productsDisplayCont {
+    width: 90%;
+  }
+  .prodCateg,
+  .prodName {
+    margin-bottom: 1vw;
+  }
+  .pcItem img {
+    height: 9vw;
+  }
+  .productsDisplayCont {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+  #ProductCategory {
+    font-size: 1.5vw;
+    font-optical-sizing: auto;
+  }
+
+  #productName {
+    font-size: 2vw;
+    font-optical-sizing: auto;
+  }
+  #price {
+    font-size: 2.5vw;
+    font-optical-sizing: auto;
+  }
+  .cartProd {
+    font-size: 3.5vw;
+    font-optical-sizing: auto;
+  }
+
+  .hddtxt,
+  .casetxt {
+    padding-left: 0.5rem;
+  }
+  .productsDisplayContMain {
+    margin-top: 3vh;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .categTitle {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .deals h5 {
+    font-size: 12px !important;
+  }
+
+  .deals h6 {
+    font-size: 9px !important;
+  }
+
+  .deals p {
+    font-size: 7px !important;
+  }
+
+  .deals i {
+    font-size: 10px !important;
+  }
+
+  .deals .pShop {
+    font-size: 11px !important;
+  }
+
+  body > nav > div > div.d-lg-none > div > ul {
+    font-size: 12px;
+  }
+
+  #navbarDropdown {
+    font-size: 14px !important;
+  }
+
+  #header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .pcItem img {
+    height: 2rem;
+  }
+  .moboImg {
+    padding-left: 3px;
+  }
+  .productsDisplayCont {
+    width: 80%;
+  }
+}
